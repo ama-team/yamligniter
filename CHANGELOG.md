@@ -5,5 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Changed
+- YamlIgniter::config() has been erroneously returning values not
+wrapped in `['config' => %config%]` structure.
+
+## [0.1.0]
 ### Added
 - Initial implementation

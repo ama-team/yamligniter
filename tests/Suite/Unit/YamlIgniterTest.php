@@ -33,7 +33,7 @@ class YamlIgniterTest extends \Codeception\Test\Unit
                 return $argument === $path ? 'alpha: beta' : 'gamma: delta';
             });
 
-        $expected = ['alpha' => 'beta', 'gamma' => 'delta'];
+        $expected = ['config' => ['alpha' => 'beta', 'gamma' => 'delta']];
         $igniter = new YamlIgniter($filesystem);
         $this->assertEquals($expected, $igniter->loadConfig($path, 3));
     }

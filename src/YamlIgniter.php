@@ -122,7 +122,7 @@ class YamlIgniter
     {
         $defaults = $this->defaultsProvider->get('config', $version);
         $data = $this->loadFile($path);
-        return $this->merge($data, $defaults);
+        return ['config' => $this->merge($data, $defaults)];
     }
 
     /**
