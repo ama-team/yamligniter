@@ -4,6 +4,7 @@ machine:
     - sudo apt-add-repository ppa:yandex-qatools/allure-framework -y
     - sudo apt-get update -yq
     - sudo apt-get install allure-commandline -yq
+    - 'echo "date.timezone = UTC" >> /opt/circleci/php/$(phpenv global)/etc/php.ini'
 test:
   pre:
     - 'composer run test:clean'
