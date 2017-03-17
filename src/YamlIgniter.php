@@ -2,8 +2,8 @@
 
 namespace AmaTeam\YamlIgniter;
 
+use Exception;
 use Symfony\Component\Yaml\Yaml;
-use Throwable;
 
 /**
  * Package entry point.
@@ -142,7 +142,7 @@ class YamlIgniter
         }
         try {
             $config = Yaml::parse($this->filesystem->read($path));
-        } catch (Throwable $e) {
+        } catch (Exception $e) {
             $message = 'Failed to parse YAML in file ' . $path;
             throw new IllegalConfigurationException($message, 0, $e);
         }
