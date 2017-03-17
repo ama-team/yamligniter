@@ -1,0 +1,4 @@
+base_url: 'http://codeigniter.com/'
+log_threshold: 2
+global_xss_filtering: true
+custom_config_option: 12

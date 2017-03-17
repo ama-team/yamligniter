@@ -1,0 +1,22 @@
+actor: Tester
+paths:
+  tests: tests/Suite
+  log: tests/Report
+  data: tests/Resources
+  support: tests/Support
+  envs: tests/Environments
+settings:
+  bootstrap: _bootstrap.php
+  colors: true
+  memory_limit: 1024M
+coverage:
+  enabled: true
+  include:
+    - src/*
+extensions:
+  enabled:
+    - Yandex\Allure\Adapter\AllureAdapter
+  config:
+    Yandex\Allure\Adapter\AllureAdapter:
+      deletePreviousResults: false
+      outputDirectory: ../Metadata/Allure

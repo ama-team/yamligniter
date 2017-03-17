@@ -1,0 +1,23 @@
+active_group: main
+db:
+  main:
+    hostname: mysql
+    username: application
+    password: password
+    database: application_things
+    char_set: utf8mb4
+    dbcollat: utf8mb4_general_ci
+    failover:
+      - hostname: failover-1
+        username: failover
+        password: fuxxored
+        database: application_things
+        char_set: utf8mb4
+        dbcollat: utf8mb4_general_ci
+      - hostname: failover-2
+        username: failover
+        password: fuxxored
+        database: application_things
+        char_set: utf8mb4
+        dbcollat: utf8mb4_general_ci
+

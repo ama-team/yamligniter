@@ -1,0 +1,17 @@
+machine:
+  php:
+    version: 5.4
+  post:
+    - sudo apt-add-repository ppa:yandex-qatools/allure-framework -y
+    - sudo apt-get update -yq
+    - sudo apt-get install allure-commandline -yq
+test:
+  pre:
+    - 'composer run test:clean'
+  override:
+    - 'composer run test'
+  post:
+    - 'composer run test:report'
+    - mkdir -p $CIRCLE_TEST_REPORTS/junit
+    - cp tests/Report/report.xml $CIRCLE_TEST_REPORTS/junit/junit.xml
+    - cp -r tests/Report/* $CIRCLE_ARTIFACTS/

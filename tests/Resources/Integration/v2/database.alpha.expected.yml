@@ -1,0 +1,35 @@
+active_record: true
+active_group: main
+db:
+  main:
+    hostname: mysql.srv01.company.name
+    username: betsy
+    password: secure
+    database: codeigniter
+    dbdriver: mysql
+    dbprefix: ''
+    pconnect: true
+    db_debug: false
+    cache_on: false
+    cachedir: ''
+    char_set: utf8
+    dbcollat: utf8_general_ci
+    swap_pre: ''
+    autoinit: true
+    stricton: false
+  failover:
+    hostname: localhost
+    username: root
+    password: root
+    database: codeigniter
+    dbdriver: mysql
+    dbprefix: ''
+    pconnect: true
+    db_debug: false
+    cache_on: false
+    cachedir: ''
+    char_set: utf8
+    dbcollat: utf8_general_ci
+    swap_pre: ''
+    autoinit: true
+    stricton: false

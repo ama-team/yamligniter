@@ -1,0 +1,15 @@
+hostname: localhost
+username: root
+password: ''
+database: database_name
+dbdriver: mysql
+dbprefix: ''
+pconnect: true
+db_debug: false
+cache_on: false
+cachedir: ''
+char_set: utf8
+dbcollat: utf8_general_ci
+swap_pre: ''
+autoinit: true
+stricton: false

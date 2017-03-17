@@ -1,0 +1,39 @@
+{
+  "name": "ama-team/yamligniter",
+  "description": "Simple tool to configure CodeIgniter 2/3 with YAML",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Etki",
+      "email": "etki@etki.me"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "AmaTeam\\YamlIgniter\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AmaTeam\\YamlIgniter\\Test\\": "tests/"
+    }
+  },
+  "require": {
+    "symfony/yaml": "^3.2"
+  },
+  "require-dev": {
+    "codeception/codeception": "^2.2",
+    "allure-framework/allure-codeception": "^1.2",
+    "satooshi/php-coveralls": "^1.0"
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "scripts": {
+    "test:clean": "rm -rf tests/Metadata/Allure/* && rm -rf tests/Report/*",
+    "test": "bin/codecept run --report --html --xml --coverage --coverage-html --coverage-xml",
+    "test:report:allure": "allure generate -o tests/Report/Allure -- tests/Metadata/Allure",
+    "test:report": "composer run-script test:report:allure",
+    "test:full": "composer run-script test:clean && composer run-script test && composer run-script test:report"
+  }
+}

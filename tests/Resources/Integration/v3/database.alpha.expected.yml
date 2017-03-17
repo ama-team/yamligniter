@@ -1,0 +1,60 @@
+query_builder: true
+active_group: main
+db:
+  main:
+    dsn: ''
+    hostname: mysql
+    username: application
+    password: password
+    database: application_things
+    dbdriver: mysqli
+    dbprefix: ''
+    pconnect: true
+    db_debug: true
+    cache_on: false
+    cachedir: ''
+    char_set: utf8mb4
+    dbcollat: utf8mb4_general_ci
+    swap_pre: ''
+    encrypt: false
+    compress: false
+    stricton: false
+    failover:
+      - dsn: ''
+        hostname: failover-1
+        username: failover
+        password: fuxxored
+        database: application_things
+        dbdriver: mysqli
+        dbprefix: ''
+        pconnect: true
+        db_debug: true
+        cache_on: false
+        cachedir: ''
+        char_set: utf8mb4
+        dbcollat: utf8mb4_general_ci
+        swap_pre: ''
+        encrypt: false
+        compress: false
+        stricton: false
+        # it's easier to keep than to bear with this little inaccuracy
+        failover: []
+      - dsn: ''
+        hostname: failover-2
+        username: failover
+        password: fuxxored
+        database: application_things
+        dbdriver: mysqli
+        dbprefix: ''
+        pconnect: true
+        db_debug: true
+        cache_on: false
+        cachedir: ''
+        char_set: utf8mb4
+        dbcollat: utf8mb4_general_ci
+        swap_pre: ''
+        encrypt: false
+        compress: false
+        stricton: false
+        failover: []
+

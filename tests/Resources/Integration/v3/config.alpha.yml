@@ -1,0 +1,8 @@
+base_url: 'http://codeigniter.com/'
+uri_protocol: AUTO
+language: russian
+subclass_prefix: Override
+composer_autoload: true
+sess_driver: database
+sess_save_path: ci_session
+custom_config_option: 12

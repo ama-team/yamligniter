@@ -1,0 +1,11 @@
+# Composer artifacts
+vendor
+composer.lock
+bin
+
+# IDE configuration
+.idea
+
+# Codeception artifacts
+tests/Report/*
+tests/Metadata/*

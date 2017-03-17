@@ -1,0 +1,10 @@
+active_group: main
+db:
+  main:
+    hostname: mysql.srv01.company.name
+    username: betsy
+    password: secure
+    database: codeigniter
+  failover:
+    password: root
+    database: codeigniter
