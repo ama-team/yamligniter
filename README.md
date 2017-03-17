@@ -149,3 +149,21 @@ composer run-script test:full
 
 Fork, fix, enhance, create pull request, ping maintainers if there's no
 reaction.
+
+## Self-esteem badge cellar
+
+### Master branch
+
+[![CircleCI/master](https://img.shields.io/circleci/project/github/ama-team/yamligniter/master.svg?style=flat-square)](https://circleci.com/gh/ama-team/yamligniter/tree/master)
+[![Coveralls/master](https://img.shields.io/coveralls/ama-team/yamligniter/master.svg?style=flat-square)](https://coveralls.io/github/ama-team/yamligniter?branch=master)
+[![CodeClimate](https://img.shields.io/codeclimate/github/ama-team/yamligniter.svg?style=flat-square)](https://codeclimate.com/github/ama-team/yamligniter)
+[![Packagist](https://img.shields.io/packagist/l/ama-team/yamligniter.svg?style=flat-square)](https://packagist.org/packages/ama-team/yamligniter)
+[![Packagist](https://img.shields.io/packagist/v/ama-team/yamligniter.svg?style=flat-square)](https://packagist.org/packages/ama-team/yamligniter)
+
+### Dev branch
+
+[![CircleCI/dev](https://img.shields.io/circleci/project/github/ama-team/yamligniter/dev.svg?style=flat-square)](https://circleci.com/gh/ama-team/yamligniter/tree/dev)
+[![Coveralls/dev](https://img.shields.io/coveralls/ama-team/yamligniter/dev.svg?style=flat-square)](https://coveralls.io/github/ama-team/yamligniter?branch=dev)
+
+  [allure]: http://allure.qatools.ru/
+  [codeception]: http://codeception.com/

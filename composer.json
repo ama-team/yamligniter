@@ -34,6 +34,8 @@
     "test": "bin/codecept run --report --html --xml --coverage --coverage-html --coverage-xml",
     "test:report:allure": "allure generate -o tests/Report/Allure -- tests/Metadata/Allure",
     "test:report": "composer run-script test:report:allure",
-    "test:full": "composer run-script test:clean && composer run-script test && composer run-script test:report"
+    "test:full": "composer run-script test:clean && composer run-script test && composer run-script test:report",
+    "test:report:coverage:publish:coveralls": "bin/coveralls",
+    "test:report:coverage:publish": "composer run test:report:coverage:publish:coveralls"
   }
 }

@@ -12,6 +12,8 @@ test:
     - 'composer run test'
   post:
     - 'composer run test:report'
+    # in case tag is pushed, coveralls will try to find current branch and will end on master
+    - '[ -z "$CIRCLE_BRANCH" ] || composer run test:report:coverage:publish'
     - mkdir -p $CIRCLE_TEST_REPORTS/junit
     - cp tests/Report/report.xml $CIRCLE_TEST_REPORTS/junit/junit.xml
     - cp -r tests/Report/* $CIRCLE_ARTIFACTS/
